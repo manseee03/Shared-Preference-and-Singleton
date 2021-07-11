@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingConstraints"
+    android:background="#FBEC6B">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="REGISTRATION"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full name "
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email-id "
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Contact number"
+            android:inputType="phone"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter City name "
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter PinCode "
+            android:inputType="text"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:text="Register"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
